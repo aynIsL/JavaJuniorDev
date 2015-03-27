@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TestForGit.iml" filepath="$PROJECT_DIR$/TestForGit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommandLineArguments.iml" filepath="$PROJECT_DIR$/CommandLineArguments.iml" />
     </modules>
   </component>
 </project>
