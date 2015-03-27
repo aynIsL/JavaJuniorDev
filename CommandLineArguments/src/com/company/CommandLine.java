@@ -11,7 +11,7 @@ public class CommandLine {
                 System.out.print(eachElement + " ");
             }
         }
-        System.out.println("\nAmount of command line arguments is " + args.length);
+        System.out.println("\nAmount of command line arguments : " + args.length);
     }
 
     public void viewArgumentsByIndex(String[] args){
