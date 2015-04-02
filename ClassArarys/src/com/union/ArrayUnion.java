@@ -27,7 +27,8 @@ public class ArrayUnion {
                 }
             }
         }
+        int[] result = Arrays.copyOf(temp, counter);
 
-        return temp;
+        return result;
     }
 }
