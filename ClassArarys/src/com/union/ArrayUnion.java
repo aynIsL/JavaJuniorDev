@@ -11,8 +11,6 @@ public class ArrayUnion {
 
     public static int[] leftUnion(int[] leftArray, int[] rightArray) {
 
-        int[] first = Arrays.copyOf(leftArray, leftArray.length);
-        int[] second = Arrays.copyOf(rightArray, rightArray.length);
         int[] temp = new int[leftArray.length + rightArray.length];
         int counter = 0;
         for (int aFirst : leftArray) {
