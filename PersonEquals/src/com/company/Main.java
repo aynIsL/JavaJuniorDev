@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,7 +14,9 @@ public class Main {
         System.out.println("Compare with '==' : " + (person1 == person2));
         System.out.println("Compare with 'equals' : " + person1.equals(person2));
 
-        System.out.println(person1.toString());
+
+
+
     }
 
 }
