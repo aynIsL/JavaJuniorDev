@@ -4,7 +4,7 @@ import com.union.Person;
 import com.union.PersonAgeComparator;
 
 import java.util.Arrays;
-
+//Artem looked this class
 public class Main {
 
     public static void main(String[] args) {
