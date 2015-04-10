@@ -1,44 +1,21 @@
 package com.company;
 
-import com.union.Person;
-import com.union.PersonAgeComparator;
+import com.union.ArrayUnion;
 
 import java.util.Arrays;
-//Artem looked this class
+
 public class Main {
 
     public static void main(String[] args) {
 
-//        int[] first = {1, 5, 4, 23, 65, 32, 78,0,2};
-//        int[] second = {3, 5, 24, 4, 1, 2, 34, 45, 32, 5};
-//
-//        int[] third = {1,2,4,6,8};
-//        int[] fourth = {5,7,8,2};
-//
-//        int[] temp = ArrayUnion.innerUnion(third, fourth);
-//        System.out.println(Arrays.toString(temp));
+        int[] a = {1,2,3,4,7,17,54,89};
+        int[] b = {1,2,3,5,7,17,99,62,67,98,66};
 
-        Person person1 = new Person("Ivan","Kyselov","kiselev@online.ua",30);
-        Person person2 = new Person("Tatiana","Kyselova","kiseleva@online.ua",30);
-        Person person3 = new Person("Yuriu","Lisuk","lisuk@online.ua",53);
-        Person person4 = new Person("Olga","Lisuk","lisukO@online.ua",57);
+        ArrayUnion au = new ArrayUnion();
+        int c[] = au.innerUnion(a,b);
+        System.out.println(Arrays.toString(c));
 
-        Person[] persons = {person1,person2,person3,person4};
-        for (Person temp : persons){
-            System.out.println(temp.toString());
-        }
-
-//        Arrays.sort(persons, new PersonNameComparator());
-//        for (Person temp : persons){
-//            System.out.println(temp.toString());
-//        }
-
-        Arrays.sort(persons, new PersonAgeComparator());
-        for (Person temp : persons){
-            System.out.println(temp.toString());
-        }
-
-
+        //System.out.println(Arrays.toString(c));
     }
 
 }
