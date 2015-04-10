@@ -37,22 +37,6 @@ public class ArrayUnionTest {
 
     }
 
-    @Test
-    public void testRightArrayEmpty() throws Exception {
-
-        int[] rightArray = null;
-        int[] leftArray = {1,2};
-        String expectedValue = "An array shouldn`t be null.";
-        ArrayUnion testClass = new ArrayUnion();
-        int[] returnedValue = null;
-        try{
-            returnedValue = testClass.leftUnion(leftArray, rightArray);
-            fail("Exception should be thrown!");
-        }
-        catch (NullArrayException exception){
-            assertEquals(expectedValue, exception.getErrorCode());
-        }
-    }
 
     @Test
     public void testIsArrayEmpty() throws Exception {
