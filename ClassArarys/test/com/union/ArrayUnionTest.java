@@ -31,6 +31,7 @@ public class ArrayUnionTest {
             testClass.leftUnion(leftArray, rightArray);;
             fail("Exception should be thrown!");
         }
+        //local code review (vtegza): this class is not available @ 12.04.15
         catch (NullArrayException e){
             assertEquals(expectedValue, e.getErrorCode());
         }
