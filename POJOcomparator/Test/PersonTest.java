@@ -1,3 +1,4 @@
+import com.person.EmptyNameException;
 import com.person.Person;
 import org.junit.Assert;
 import org.junit.Test;
@@ -8,17 +9,17 @@ import static junit.framework.TestCase.fail;
 public class PersonTest {
 
     @Test
-    public void NullNameTest() throws Exception{
+    public void NullNameTest() throws Exception {
         Person testPerson = null;
         String testData = null;
-        String expectedValue = " ";
+        String expectedValue = null;
 
         try {
             testPerson = new Person.Builder().firstName(testData).lastName("Kyselov").build();
             fail("Exception should be thrown");
         }
-        catch(NullPointerException error){
-            Assert.assertEquals(expectedValue, testPerson.getFirstName());
+        catch(NullPointerException e){
+            Assert.assertEquals(expectedValue, e.getMessage());
         }
     }
 
@@ -32,9 +33,10 @@ public class PersonTest {
             testPerson = new Person.Builder().firstName(testData).lastName("Kyselov").build();
             fail("Exception should be thrown");
         }
-        catch(NullPointerException error){
-            Assert.assertEquals(expectedValue, error.getMessage());
-        }
+        catch(EmptyNameException e){
+            System.out.println(e.getErrorCode());
+            Assert.assertEquals(expectedValue, e.getErrorCode());
+    }
     }
 
 }
