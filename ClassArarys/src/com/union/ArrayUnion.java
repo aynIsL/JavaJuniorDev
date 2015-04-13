@@ -9,7 +9,7 @@ public class ArrayUnion {
         if (Arrays.equals(leftArray, null) || Arrays.equals(rightArray, null)) {
             throw new NullArrayException();
         }
-        else if( leftArray.length ==0 || rightArray.length==0 ) throw new ArrayEmptyException();
+        else if( leftArray.length ==0 || rightArray.length==0 ) throw new EmptyArrayException();
         else {
             int[] temp = new int[leftArray.length + rightArray.length];
             int counter = 0;
