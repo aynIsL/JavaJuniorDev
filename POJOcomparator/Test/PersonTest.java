@@ -15,7 +15,7 @@ public class PersonTest {
 
         try {
             testPerson = new Person.Builder().firstName(testData).lastName("Kyselov").build();
-            //fail("Exception should be thrown");
+            fail("Exception should be thrown");
         }
         catch(NullPointerException error){
             Assert.assertEquals(expectedValue, testPerson.getFirstName());

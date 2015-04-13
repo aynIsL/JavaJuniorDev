@@ -49,11 +49,6 @@ public class Person {
     public String toString(){
         return String.format("Name: " + firstName + " " + lastName + " ; Age: " + age );
     }
-    //local code review (vtegza): clean up code from such comments @ 12.04.15
-//    {
-//        return super.toString();
-//    }
-
 
     public static class Builder {
         private String firstName;
