@@ -67,7 +67,9 @@ public class Person {
             this.age = original.age;
         }
 
-            public Builder firstName(String firstName){
+            public Builder firstName(String firstName) throws Exception{
+                if(firstName == null) throw new NullPointerException();
+                else if(firstName.length()==0) throw new EmptyNameException();
             this.firstName = firstName;
             return this;
         }
