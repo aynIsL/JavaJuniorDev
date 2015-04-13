@@ -7,6 +7,7 @@ public class Person {
     private final String firstName;
     private final String lastName;
     private final String email;
+    //local code review (vtegza): should be final @ 12.04.15
     private Position position;
 
     public Person(String firstName, String lastName, String email){

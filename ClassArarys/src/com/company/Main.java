@@ -10,7 +10,7 @@ public class Main {
 
         int[] first = {1,2,3,4,7,17,54,89};
         int[] second = {1,2,3,5,7};
-
+        //local code review (vtegza): give a better names @ 12.04.15
         ArrayUnion au = new ArrayUnion();
         int result[] = au.innerUnion(first, second);
         System.out.println("Inner union : " + Arrays.toString(result));
