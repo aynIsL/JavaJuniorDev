@@ -1,8 +1,8 @@
 package com.union;
 
-public class ArrayEmptyException extends Exception{
+public class EmptArrayException extends Exception{
     private final String errorCode;
-    public ArrayEmptyException(){
+    public EmptArrayException(){
         errorCode = "Array shouldn`t be empty";
     }
     public String getErrorCode(){
