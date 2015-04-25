@@ -22,6 +22,7 @@ public class ArrayUnionTest {
     }
 
     @Test
+    //local code review (vtegza): method names should always start wit lover case symbol @ 21.04.15
     public void NullArrayTest() throws Exception{
         int[] leftArray = {1,3,4};
         int[] rightArray = null;
@@ -40,6 +41,7 @@ public class ArrayUnionTest {
 
 
     @Test
+    //local code review (vtegza): method names should always start wit lover case symbol @ 21.04.15
     public void EmptyArrayTest() throws Exception {
 
         int[] rightArray = new int[0];
